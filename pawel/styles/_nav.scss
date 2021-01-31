@@ -1,0 +1,31 @@
+/* All nav and header stylings. Including burger menu */
+
+header {
+  background: rgb(236, 235, 235);
+  border: 2px solid black;
+  min-height: 10vh;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    font-size: 1.7rem;
+    padding: 1rem;
+  }
+  #logo {
+    padding: 1rem;
+  }
+}
