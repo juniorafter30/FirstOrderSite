@@ -1,6 +1,7 @@
 /* Home section stylings */
 
 #home {
+  background: $background-color-yellow;
   min-height: 90vh;
   width: 100%;
   display: flex;
@@ -11,14 +12,10 @@
 }
 
 .home-text {
+  @include flex(center, column);
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: justify;
   flex: 1 1 40rem;
-  background: rgb(236, 235, 235);
 
   .fas {
     font-size: 1.5rem;
@@ -30,21 +27,21 @@
   }
 
   h3 {
-    padding: 3rem;
+    padding: 2.5rem;
     padding-bottom: 2rem;
+    font-size: 2.5rem;
   }
   li {
-    margin-left: auto;
+    margin-left: 4rem;
   }
 }
 
 .home-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, row);
   flex: 1 1 40rem;
 
   img {
+    border: 1px solid black;
     width: 50%;
     height: 50%;
     position: relative;
@@ -60,4 +57,19 @@
   height: 100%;
   background: rgb(236, 235, 235);
   z-index: -100;
+}
+
+.name {
+  animation-name: animation;
+  animation-duration: 5s;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

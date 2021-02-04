@@ -1,0 +1,23 @@
+#kontakt {
+  min-height: 90vh;
+  @include flex(center, row);
+  background: rgb(209, 205, 205);
+}
+
+form {
+  margin: auto;
+  width: 50rem;
+  height: 40rem;
+  @include flex(center, column);
+  border: 2px solid black;
+  border-radius: 4%;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  background: rgba(34, 32, 32, 0.5);
+}
+
+input {
+  padding: 1rem 4rem;
+  margin: 0.5rem;
+}

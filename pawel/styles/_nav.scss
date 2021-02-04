@@ -1,10 +1,11 @@
 /* All nav and header stylings. Including burger menu */
 
 header {
-  background: rgb(236, 235, 235);
+  width: 100%;
+  background: transparent;
   border: 2px solid black;
   min-height: 10vh;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 100;
 }
@@ -27,5 +28,15 @@ nav {
   }
   #logo {
     padding: 1rem;
+  }
+}
+
+.on-scroll {
+  background-color: $background-color-main;
+
+  transition: all 0.5s ease;
+
+  a {
+    color: white;
   }
 }

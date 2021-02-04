@@ -11,7 +11,23 @@ html {
   font-family: "poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+//MIXINS
+
+@mixin flex($justify, $direction) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+//VARIABLES
+
+$background-color-main: rgb(46, 45, 45);
+$background-color-yellow: #edc699;
+
 /* FONT SIZES  and decorations*/
+
 a {
   text-decoration: none;
   color: black;

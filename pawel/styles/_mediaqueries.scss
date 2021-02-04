@@ -1,8 +1,16 @@
 /* RESPONSIVE MATTERS */
 
 @media screen and (max-width: 1100px) {
+  .on-scroll {
+    background: transparent;
+  }
+
   header {
     border: none;
+    position: relative;
+    a {
+      color: white;
+    }
   }
   .burger {
     position: fixed;
@@ -21,12 +29,9 @@
   }
 
   nav {
-    display: flex;
-    flex-direction: column;
+    @include flex(space-around, column);
     height: 100%;
     width: 100%;
-    align-items: center;
-    justify-content: space-around;
     font-size: 3em;
     position: fixed;
     top: 0;
@@ -37,6 +42,46 @@
 
     ul {
       flex-direction: column;
+
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .active {
+    transform: translateX(-100%);
+  }
+  .toggle .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+    transition: all 1s ease;
+    background: white;
+  }
+  .toggle .line-2 {
+    opacity: 0;
+  }
+
+  .toggle .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+    background: white;
+  }
+
+  .landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 0%);
+
+    h2 {
+      background: $background-color-main;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .landing-text {
+    h2 {
+      color: white;
+      border: 1px solid black;
     }
   }
 }
