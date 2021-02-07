@@ -1,10 +1,16 @@
+// Footer stylings
+
 footer {
   @include flex(center, column);
   text-align: center;
-  min-height: 10vh;
+  height: 10vh;
   background: rgb(46, 45, 45);
   color: white;
   p {
     font-size: 1rem;
   }
+}
+
+.love-what-youdo {
+  color: $background-color-yellow;
 }

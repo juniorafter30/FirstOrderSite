@@ -14,6 +14,7 @@ burger.addEventListener('click', () => {
 })
 
 // Function that closes navigation when user clicks on single position
+
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.toggle('active');
