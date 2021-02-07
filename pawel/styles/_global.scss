@@ -24,7 +24,7 @@ html {
 //VARIABLES
 
 $background-color-main: rgb(46, 45, 45);
-$background-color-yellow: #edc699;
+$background-color-yellow: #dab351;
 
 /* FONT SIZES  and decorations*/
 
@@ -45,9 +45,13 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 p {
   font-size: 2rem;
+}
+
+.love-what-youdo {
+  color: $background-color-yellow;
 }

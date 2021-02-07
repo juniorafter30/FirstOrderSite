@@ -1,20 +1,21 @@
 #oferta {
-  background: $background-color-yellow;
+  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
   max-width: 100vw;
   min-height: 150vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
 }
 
 #oferta img {
-  width: 100%;
-  height: 100%;
+  max-width: 50rem;
+  max-height: 30rem;
 }
 
 .box {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   padding: 2rem;
 }

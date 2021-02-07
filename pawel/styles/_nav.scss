@@ -32,6 +32,9 @@ nav {
 }
 
 .on-scroll {
+  .oferta {
+    color: $background-color-yellow;
+  }
   background-color: $background-color-main;
 
   transition: all 0.5s ease;
