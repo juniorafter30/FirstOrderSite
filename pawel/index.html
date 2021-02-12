@@ -28,8 +28,8 @@
         <h1 id="logo"><a href="#">Love what you do</a></h1>
           
          </div>
-         <ul><li class="nav-links"><a href="#home">Home</a></li>
-             <li class="nav-links"><a href="#about">O mnie</a></li>
+         <ul><li class="nav-links"><a href="#landing">Home</a></li>
+             <li class="nav-links"><a href="#about-text-photo">O mnie</a></li>
              <li class="nav-links"><a href="#oferta"><span class="oferta">Oferta</span></a></li>
              <li class="nav-links"><a href="#kontakt">Kontakt</a></li>
             
@@ -38,12 +38,15 @@
     </header>
     <div class="landing-text">
     <h2 class="motto">Pomogę Ci odnaleźć<br>równowagę</h2>
-    <button class="session"><a href="#kontakt">Zamów sesję</a></button>
+    <button class="session"><a href="#kontakt">Kontakt</a></button>
     </div>
+    <div class="landing-clip-path"></div>
+
+   <a class="landing-arrow" href="#about-text-photo"><i class="far fa-arrow-alt-circle-down"></i></a>
 </section>
-<div class="slider"></div>
+
  <main>
-     <section id="home">
+     <div id="about-text-photo">
          <div class="clip-path"></div>
         <div class="home-text">
          <h3>Witaj,<br>nazywam się Paweł Szewczyk.<br><br>
@@ -62,7 +65,7 @@
         <div class="home-image">
             <img class="ownerimage"src="/pawel/images/pawel.png" alt="author">
         </div>
-     </section>
+      </div>
     
  </main>
  <section id="about">
@@ -95,6 +98,8 @@
 </div>
 </section>
 <section id="oferta">
+  <h2 class="ofert-text-top">Czym się zajmuję?</h2>
+  <div class="ofert-cards-wrapper">
     <div class="card card1">
         <div class="card-image"></div>
         <div class="card-text">
@@ -120,9 +125,11 @@
         <div class="card-bottom"></div>
     </div>
 </div>
+</div>
 </section>
 <section id="kontakt">
-    
+  <h2>Masz pytania? </h2>
+    <p class="kontakt-text-top">Zrób pierwszy krok ku zmianie</p>
     <div class="form-wrapper">
     <form action="contact.php" method="post">
         <div class="background">

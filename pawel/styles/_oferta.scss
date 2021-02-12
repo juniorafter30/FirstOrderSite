@@ -5,16 +5,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
+  position: relative;
+}
+.ofert-text-top {
+  margin-bottom: 10rem;
+  opacity: 0;
+}
+.ofert-cards-wrapper {
+  @include flex(center, row);
+  flex-wrap: wrap;
 }
 
 .card {
   margin: 3rem;
   display: grid;
   grid-template-columns: 30rem;
-  grid-template-rows: 21rem 21rem 8rem;
+  grid-template-rows: 21rem 21rem 10rem;
   grid-template-areas: "image" "text" "bottom";
   border-radius: 1.8rem;
   background: #3e3e3e;
@@ -38,7 +47,7 @@
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   h2 {
     font-size: 2rem;

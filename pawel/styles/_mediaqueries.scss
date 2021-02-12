@@ -97,3 +97,20 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .ofert-text-top {
+    margin-top: 3rem;
+  }
+
+  .card1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .home-image {
+    img {
+      width: 60%;
+    }
+  }
+}

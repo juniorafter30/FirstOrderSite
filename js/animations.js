@@ -72,3 +72,31 @@ gsap.to(".intoduction-text-6", {
     }
 
 })
+
+
+gsap.to(".ofert-text-top", {
+    scrollTrigger: {
+        trigger:  ".ofert-text-top",
+    },
+    x:0,
+    opacity: 1,
+    duration: 3,
+    snap:{
+        delay: 1
+    }
+
+})
+
+
+gsap.to(".kontakt-text-top", {
+    scrollTrigger: {
+        trigger:  ".screen",
+    },
+    x:0,
+    opacity: 1,
+    duration: 3,
+    snap:{
+        delay: 1
+    }
+
+})
