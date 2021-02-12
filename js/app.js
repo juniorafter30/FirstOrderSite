@@ -6,11 +6,10 @@ const burger = document.querySelector('.burger');  //Navigation burger
 const nav = document.querySelector('nav'); // Navigation
 const navLinks = nav.querySelectorAll('a'); // Navigation links
 const header = document.querySelector('header') // Our whole header
-const sessionButton = document.querySelector('.session') // Session button
-const landingMotto= document.querySelector('.landing-text');
 
 
-const tl = new TimelineMax();
+
+
 
 //NAVIGATION BURGER FUNCTION
 

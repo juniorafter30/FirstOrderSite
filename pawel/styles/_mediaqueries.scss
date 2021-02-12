@@ -14,14 +14,14 @@
   }
   .burger {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 0.8rem;
+    right: 0.8rem;
     cursor: pointer;
     z-index: 100;
   }
 
   .burger span {
-    padding: 0.2rem 2rem;
+    padding: 0.15rem 1.7rem;
     background: #000000;
     display: block;
     margin: 0.5rem;
@@ -69,10 +69,22 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(20%, 0%);
+    margin: 0;
 
     h2 {
       background: $background-color-main;
+    }
+  }
+
+  .home-image {
+    margin-top: 3rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .home-text {
+    h3 {
+      font-size: 1.5rem;
     }
   }
 }

@@ -99,11 +99,36 @@ nav #logo {
   color: white;
 }
 
+/* About section stylings */
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: #2e2d2d;
+  color: white;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.7rem;
+  padding: 2rem;
+}
+
 /* Home section stylings */
 #home {
-  background: -webkit-gradient(linear, left top, right top, from(#746f71), to(#dac3c8));
-  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
-  min-height: 90vh;
+  background: #2e2d2d;
+  min-height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +163,7 @@ nav #logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+  color: white;
 }
 
 .home-text .fas {
@@ -149,10 +175,12 @@ nav #logo {
 .home-text li {
   font-size: 2rem;
   margin-left: 4rem;
+  -webkit-transform: translate(-200%);
+          transform: translate(-200%);
 }
 
 .home-text h3 {
-  padding: 2.5rem;
+  padding: 2.8rem;
   padding-bottom: 2rem;
 }
 
@@ -192,46 +220,31 @@ nav #logo {
   z-index: -100;
 }
 
-.name {
-  -webkit-animation-name: animation;
-          animation-name: animation;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-@-webkit-keyframes animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* About section stylings */
-#about {
-  min-height: 100vh;
-  background: #2e2d2d;
-  color: white;
-}
-
-#about p {
-  font-size: 1.7rem;
-  padding: 2rem;
-}
-
 .about-wrapper {
   width: 80%;
   margin: auto;
+}
+
+details {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+summary {
+  margin: 3rem;
+  font-size: 2rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: #dab351;
+  background: #2b2b2b;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+details[open] summary {
+  margin: 2.5rem;
 }
 
 /* RESPONSIVE MATTERS */
@@ -248,13 +261,13 @@ nav #logo {
   }
   .burger {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 0.8rem;
+    right: 0.8rem;
     cursor: pointer;
     z-index: 100;
   }
   .burger span {
-    padding: 0.2rem 2rem;
+    padding: 0.15rem 1.7rem;
     background: #000000;
     display: block;
     margin: 0.5rem;
@@ -319,11 +332,17 @@ nav #logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(20%, 0%);
-            transform: translate(20%, 0%);
+    margin: 0;
   }
   .landing-text h2 {
     background: #2e2d2d;
+  }
+  .home-image {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .home-text h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -338,7 +357,7 @@ nav #logo {
   background: -webkit-gradient(linear, left top, right top, from(#746f71), to(#dac3c8));
   background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
   max-width: 100vw;
-  min-height: 150vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,22 +367,81 @@ nav #logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
 }
 
-#oferta img {
-  width: 100%;
-  height: 100%;
+.card {
+  margin: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30rem;
+      grid-template-columns: 30rem;
+  -ms-grid-rows: 21rem 21rem 8rem;
+      grid-template-rows: 21rem 21rem 8rem;
+      grid-template-areas: "image" "text" "bottom";
+  border-radius: 1.8rem;
+  background: #3e3e3e;
+  color: white;
+  -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+          box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 
-.box {
-  width: 80%;
-  height: 80%;
-  padding: 3rem;
+.card-image {
+  grid-area: "image";
+  background: url(/pawel/images/wsparciementalne.png);
+  background-size: cover;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.card-text {
+  grid-area: "text";
+  margin: 2.5rem;
+}
+
+.card-text .date {
+  color: #dab351;
+  font-size: 1.9rem;
+}
+
+.card-text p {
+  font-size: 1rem;
+}
+
+.card-text h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #dab351;
+}
+
+.card-bottom {
+  grid-area: "bottom";
+}
+
+.card2 .card-image {
+  grid-area: "image";
+  background: url(/pawel/images/autohipnoza.png);
+  background-size: cover;
+}
+
+.card3 .card-image {
+  grid-area: "image";
+  background: url(/pawel/images/glebokamedytacja.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover {
+  scale: 1.1;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 #landing {
@@ -473,6 +551,8 @@ nav #logo {
   position: relative;
   background: #3e3e3e;
   border-radius: 15px;
+  -webkit-box-shadow: 10px 7px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .screen:after {
@@ -583,7 +663,7 @@ nav #logo {
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 25px;
+  width: 122px;
   height: 4px;
   background: #dab351;
 }
@@ -729,7 +809,7 @@ footer p {
   font-size: 1rem;
 }
 
-.love-what-youdo {
+.love-what-youdo a {
   color: #dab351;
 }
 /*# sourceMappingURL=style.css.map */
