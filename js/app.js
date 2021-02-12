@@ -6,6 +6,9 @@ const burger = document.querySelector('.burger');  //Navigation burger
 const nav = document.querySelector('nav'); // Navigation
 const navLinks = nav.querySelectorAll('a'); // Navigation links
 const header = document.querySelector('header') // Our whole header
+const detailsButton = document.querySelector('.bank-transfer-details');
+const detailsClose = document.querySelector('.close');
+const bankInformations = document.querySelector('.bank-details-wrapper')
 
 
 
@@ -36,3 +39,13 @@ sessionButton.classList.toggle('on-scroll', window.scrollY > 0);
 });
 
 
+
+// Bank details button
+
+detailsButton.addEventListener('click', () => 
+    bankInformations.style.display = "flex"
+    );
+
+detailsClose.addEventListener('click', () => 
+    bankInformations.style.display = "none"
+);

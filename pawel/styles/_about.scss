@@ -3,18 +3,20 @@
 #about {
   @include flex(center, column);
   min-height: 30vh;
-  background: $background-color-main;
+  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
   color: white;
   p {
     font-size: 1.7rem;
     padding: 4rem;
+    color: black;
   }
   text-align: center;
 }
 #about-text-photo {
-  background: $background-color-main;
+  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
   padding: 4rem;
   min-height: 80vh;
+  margin: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -27,7 +29,11 @@
   margin: auto;
   text-align: justify;
   flex: 1 1 40rem;
-  color: white;
+  color: black;
+  h3 {
+    font-size: 2.5rem;
+    align-self: center;
+  }
 
   .fas {
     font-size: 1.5rem;
@@ -50,7 +56,6 @@
 .home-image {
   @include flex(center, row);
   flex: 1 1 60rem;
-  background: transparent;
 
   img {
     margin-top: 1rem;
@@ -63,6 +68,7 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     padding: 1rem;
+    background: $background-color-main;
   }
 }
 
@@ -85,6 +91,7 @@ summary {
   text-align: center;
   border: 1px solid black;
   padding: 2rem;
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
 }
 
 details[open] summary {

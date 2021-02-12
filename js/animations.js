@@ -100,3 +100,18 @@ gsap.to(".kontakt-text-top", {
     }
 
 })
+
+
+gsap.to(".app-title", {
+    scrollTrigger: {
+        trigger:  ".app-title",
+    },
+    x:0,
+    opacity: 1,
+    duration: 5,
+    delay: 3,
+    snap:{
+        delay: 5
+    }
+
+})

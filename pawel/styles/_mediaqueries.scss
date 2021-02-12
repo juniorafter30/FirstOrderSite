@@ -94,6 +94,10 @@
     h2 {
       color: white;
       border: 1px solid black;
+      box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+    }
+    .session {
+      box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
     }
   }
 }
@@ -111,6 +115,63 @@
   .home-image {
     img {
       width: 60%;
+    }
+  }
+  #about-text-photo {
+    li {
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  #oferta {
+    .ofert-text-top {
+      font-size: 2.5rem;
+      margin: auto;
+    }
+  }
+
+  #kontakt {
+    h2 {
+      font-size: 2rem;
+    }
+    .kontakt-text-top {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #about-text-photo {
+    h3 {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #about-text-photo {
+    h3 {
+      font-size: 1.9rem;
+    }
+
+    li {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #about-text-photo {
+    h3 {
+      font-size: 1.7rem;
+    }
+
+    li {
+      font-size: 1.5rem;
     }
   }
 }

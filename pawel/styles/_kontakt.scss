@@ -1,5 +1,5 @@
 #kontakt {
-  min-height: 80vh;
+  min-height: 70vh;
   @include flex(center, column);
   background: rgb(209, 205, 205);
   font-family: "Montserrat", sans-serif;
@@ -21,6 +21,7 @@
 }
 
 .form-wrapper {
+  position: relative;
   margin: auto;
 }
 
@@ -32,6 +33,7 @@
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
+  position: relative;
 }
 
 .screen {
@@ -122,6 +124,7 @@
   position: relative;
   color: $background-color-yellow;
   font-size: 26px;
+  opacity: 0;
 }
 
 .app-title:after {
@@ -130,7 +133,7 @@
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 122px;
+  width: 150px;
   height: 4px;
   background: $background-color-yellow;
 }
@@ -185,7 +188,7 @@
 }
 
 .app-form-button:hover {
-  color: #b9134f;
+  color: black;
 }
 
 .credits-link {
@@ -200,6 +203,46 @@
   width: 20px;
   height: 20px;
   margin: 0 5px;
+}
+.bank-transfer-details {
+  cursor: pointer;
+  color: $background-color-yellow;
+  font-size: 1rem;
+}
+.bank-details-wrapper {
+  position: absolute;
+  right: 6%;
+  bottom: 3%;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+  background: $background-color-main;
+  color: white;
+  display: none;
+  flex-direction: column;
+  border-radius: 15px;
+  z-index: 3;
+
+  .bank-details-close {
+    background: rgb(53, 52, 52);
+    display: flex;
+    justify-content: flex-end;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    position: relative;
+    height: 20px;
+  }
+  .close {
+    padding: 0.1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 6px;
+    top: 2px;
+  }
+}
+
+.bank-details-active {
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 520px) {

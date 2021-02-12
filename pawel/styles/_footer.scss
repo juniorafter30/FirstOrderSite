@@ -3,7 +3,7 @@
 footer {
   @include flex(center, column);
   text-align: center;
-  height: 10vh;
+  min-height: 13vh;
   background: rgb(46, 45, 45);
   color: white;
   p {
@@ -13,4 +13,17 @@ footer {
 
 .love-what-youdo a {
   color: $background-color-yellow;
+}
+
+.footer-socials-links {
+  ul {
+    @include flex(center, row);
+    li {
+      padding: 0.5rem;
+    }
+  }
+
+  a {
+    color: $background-color-yellow;
+  }
 }

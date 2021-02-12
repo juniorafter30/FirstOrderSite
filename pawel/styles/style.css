@@ -132,7 +132,8 @@ nav #logo {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 30vh;
-  background: #2e2d2d;
+  background: -webkit-gradient(linear, left top, right top, from(#746f71), to(#dac3c8));
+  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
   color: white;
   text-align: center;
 }
@@ -140,12 +141,15 @@ nav #logo {
 #about p {
   font-size: 1.7rem;
   padding: 4rem;
+  color: black;
 }
 
 #about-text-photo {
-  background: #2e2d2d;
+  background: -webkit-gradient(linear, left top, right top, from(#746f71), to(#dac3c8));
+  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
   padding: 4rem;
   min-height: 80vh;
+  margin: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +184,14 @@ nav #logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  color: white;
+  color: black;
+}
+
+.home-text h3 {
+  font-size: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .home-text .fas {
@@ -218,7 +229,6 @@ nav #logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60rem;
           flex: 1 1 60rem;
-  background: transparent;
 }
 
 .home-image img {
@@ -231,6 +241,7 @@ nav #logo {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 1rem;
+  background: #2e2d2d;
 }
 
 .about-wrapper {
@@ -255,6 +266,8 @@ summary {
   text-align: center;
   border: 1px solid black;
   padding: 2rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+          box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
 }
 
 details[open] summary {
@@ -364,6 +377,12 @@ details[open] summary {
   .landing-text h2 {
     color: white;
     border: 1px solid black;
+    -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+            box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+  }
+  .landing-text .session {
+    -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+            box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -377,6 +396,46 @@ details[open] summary {
   }
   .home-image img {
     width: 60%;
+  }
+  #about-text-photo li {
+    font-size: 1.6rem;
+  }
+  #about-text-photo h3 {
+    font-size: 1.8rem;
+  }
+  #oferta .ofert-text-top {
+    font-size: 2.5rem;
+    margin: auto;
+  }
+  #kontakt h2 {
+    font-size: 2rem;
+  }
+  #kontakt .kontakt-text-top {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #about-text-photo h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #about-text-photo h3 {
+    font-size: 1.9rem;
+  }
+  #about-text-photo li {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #about-text-photo h3 {
+    font-size: 1.7rem;
+  }
+  #about-text-photo li {
+    font-size: 1.5rem;
   }
 }
 
@@ -564,13 +623,19 @@ details[open] summary {
   bottom: 4rem;
   left: 50%;
   font-size: 6rem;
-  color: #dab351;
+  color: #2e2d2d;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.landing-arrow:hover {
+  color: #dab351;
 }
 
 #kontakt {
-  min-height: 80vh;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,6 +671,7 @@ details[open] summary {
 }
 
 .form-wrapper {
+  position: relative;
   margin: auto;
 }
 
@@ -621,6 +687,7 @@ details[open] summary {
           flex: 0 1 700px;
   margin: auto;
   padding: 10px;
+  position: relative;
 }
 
 .screen {
@@ -731,6 +798,7 @@ details[open] summary {
   position: relative;
   color: #dab351;
   font-size: 26px;
+  opacity: 0;
 }
 
 .app-title:after {
@@ -739,7 +807,7 @@ details[open] summary {
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 122px;
+  width: 150px;
   height: 4px;
   background: #dab351;
 }
@@ -807,7 +875,7 @@ details[open] summary {
 }
 
 .app-form-button:hover {
-  color: #b9134f;
+  color: black;
 }
 
 .credits-link {
@@ -826,6 +894,57 @@ details[open] summary {
   width: 20px;
   height: 20px;
   margin: 0 5px;
+}
+
+.bank-transfer-details {
+  cursor: pointer;
+  color: #dab351;
+  font-size: 1rem;
+}
+
+.bank-details-wrapper {
+  position: absolute;
+  right: 6%;
+  bottom: 3%;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+  background: #2e2d2d;
+  color: white;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.bank-details-wrapper .bank-details-close {
+  background: #353434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  position: relative;
+  height: 20px;
+}
+
+.bank-details-wrapper .close {
+  padding: 0.1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 6px;
+  top: 2px;
+}
+
+.bank-details-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media screen and (max-width: 520px) {
@@ -879,7 +998,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  height: 10vh;
+  min-height: 13vh;
   background: #2e2d2d;
   color: white;
 }
@@ -889,6 +1008,30 @@ footer p {
 }
 
 .love-what-youdo a {
+  color: #dab351;
+}
+
+.footer-socials-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-socials-links ul li {
+  padding: 0.5rem;
+}
+
+.footer-socials-links a {
   color: #dab351;
 }
 /*# sourceMappingURL=style.css.map */
