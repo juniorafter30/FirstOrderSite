@@ -3,17 +3,39 @@
 #about {
   @include flex(center, column);
   min-height: 30vh;
-  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0195c7,
+    #41cbeb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0195c7,
+    #41cbeb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: white;
   p {
     font-size: 1.7rem;
     padding: 4rem;
-    color: black;
+    color: white;
   }
   text-align: center;
 }
 #about-text-photo {
-  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0195c7,
+    #41cbeb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0195c7,
+    #41cbeb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 4rem;
   min-height: 80vh;
   margin: auto;
@@ -23,13 +45,16 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  border-top: 2px solid black;
+  position: relative;
 }
+
 .home-text {
   @include flex(center, column);
   margin: auto;
   text-align: justify;
   flex: 1 1 40rem;
-  color: black;
+  color: white;
   h3 {
     font-size: 2.5rem;
     align-self: center;
@@ -38,7 +63,7 @@
   .fas {
     font-size: 1.5rem;
     margin-right: 1.5rem;
-    color: $background-color-yellow;
+    color: #dab351;
   }
 
   li {
@@ -68,7 +93,7 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     padding: 1rem;
-    background: $background-color-main;
+    background: $background-color-yellow;
   }
 }
 
@@ -77,15 +102,30 @@
   margin: auto;
 }
 
+.about-motto-first,
+.about-motto-second {
+  opacity: 0;
+}
+
 details {
   transition: all 0.5s ease;
+  flex-wrap: wrap;
+
+  img {
+    width: 50%;
+    height: 50%;
+    padding: 0.3rem;
+    background: $background-color-yellow;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+  }
 }
 summary {
+  cursor: pointer;
   margin: 3rem;
   font-size: 2rem;
   transition: all 1s ease;
-  color: $background-color-yellow;
-  background: rgb(43, 43, 43);
+  color: white;
+  background: $background-color-yellow;
   padding: 1.5rem;
   border-radius: 1.5rem;
   text-align: center;

@@ -1,5 +1,16 @@
 #oferta {
-  background: linear-gradient(to right, #746f71 0%, #dac3c8 100%);
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   max-width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -26,14 +37,14 @@
   grid-template-rows: 21rem 21rem 10rem;
   grid-template-areas: "image" "text" "bottom";
   border-radius: 1.8rem;
-  background: #3e3e3e;
+  background: $background-color-main;
   color: white;
   box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
   text-align: center;
 }
 .card-image {
   grid-area: "image";
-  background: url(/pawel/images/wsparciementalne.png);
+  background-image: url("/images/wsparciementalne.png");
   background-size: cover;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -62,13 +73,13 @@
 
 .card2 .card-image {
   grid-area: "image";
-  background: url(/pawel/images/autohipnoza.png);
+  background: url("/images/autohipnoza.png");
   background-size: cover;
 }
 
 .card3 .card-image {
   grid-area: "image";
-  background: url(/pawel/images/glebokamedytacja.png);
+  background: url("/images/glebokamedytacja.png");
   background-size: cover;
   background-position: center;
 }

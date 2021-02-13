@@ -4,7 +4,8 @@ footer {
   @include flex(center, column);
   text-align: center;
   min-height: 13vh;
-  background: rgb(46, 45, 45);
+  background: $background-color-main;
+  border: 1px solid black;
   color: white;
   p {
     font-size: 1rem;

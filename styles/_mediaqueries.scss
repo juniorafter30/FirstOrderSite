@@ -22,7 +22,7 @@
 
   .burger span {
     padding: 0.15rem 1.7rem;
-    background: #000000;
+    background: white;
     display: block;
     margin: 0.5rem;
     transition: all 1s ease;
@@ -90,6 +90,12 @@
 }
 
 @media screen and (max-width: 1100px) {
+  nav {
+    h1 {
+      color: $background-color-yellow !important;
+    }
+  }
+
   .landing-text {
     h2 {
       color: white;
@@ -103,6 +109,10 @@
 }
 
 @media screen and (max-width: 700px) {
+  .landing-text {
+    top: 5rem;
+    left: 5rem;
+  }
   .ofert-text-top {
     margin-top: 3rem;
   }

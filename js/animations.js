@@ -115,3 +115,31 @@ gsap.to(".app-title", {
     }
 
 })
+
+gsap.to(".about-motto-first", {
+    scrollTrigger: {
+        trigger:  ".about-motto-first",
+    },
+    x:0,
+    opacity: 1,
+    duration: 5,
+    delay: 3,
+    snap:{
+        delay: 5
+    }
+
+})
+
+gsap.to(".about-motto-second", {
+    scrollTrigger: {
+        trigger:  ".about-motto-second",
+    },
+    x:0,
+    opacity: 1,
+    duration: 7,
+    delay: 3,
+    snap:{
+        delay: 5
+    }
+
+})

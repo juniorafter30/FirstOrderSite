@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
   font-family: "poppins", sans-serif;
   scroll-behavior: smooth;
+  color: white;
 }
 
 //MIXINS
@@ -23,14 +24,15 @@ html {
 
 //VARIABLES
 
-$background-color-main: rgb(46, 45, 45);
+$background-color-main: #0096c7;
+
 $background-color-yellow: #dab351;
 
 /* FONT SIZES  and decorations*/
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 li {
   list-style: none;
@@ -42,6 +44,7 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  color: white;
 }
 
 h3 {
