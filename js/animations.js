@@ -143,3 +143,4 @@ gsap.to(".about-motto-second", {
     }
 
 })
+
