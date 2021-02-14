@@ -1,8 +1,9 @@
 <?php
 
-echo "<pre>";
-    print_r($_POST);
+if(isset($_POST['email']) && $_POST['email'] != '') {
 
+
+    
     &userName = $_POST['name'];
     &userEmail = $_POST['email'];
     &messageSubject = $_POST['subject'];
@@ -16,5 +17,11 @@ echo "<pre>";
     $body .= "Email: ".$userEmail. "\r\n";
     $body .= "Message: ".$message "\r\n";
 
-    echo '</pre>';
+    
+
+    mail($to,$messageSubject,$body);
+}
+
+
+
 ?>
