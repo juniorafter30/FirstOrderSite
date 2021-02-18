@@ -16,17 +16,20 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" href="images/heart-solid.svg">
 </head>
-
 <body>
 
-  <!--social buttons start-->
+  <!--Social buttons start-->
+
   <div class="social">
     <a href="https://www.facebook.com/Kochajtocorobisz" target=_blank>Facebook <i class="fab fa-facebook"></i></a>
     <a href="#">Youtube <i class="fab fa-youtube"></i></a>
     <a href="https://www.instagram.com/kochajtocorobisz" target="_blank">Instagram <i class="fab fa-instagram"></i></a>
   </div>
-  <!--social buttons end-->
-<!--landing page starts-->
+
+  <!--Social buttons end-->
+
+  <!--Landing page starts-->
+
   <section id="landing">
     <header>
       <div class="burger">
@@ -35,6 +38,7 @@
         <span class="line-3"></span>
       </div>
       <nav>
+
         <h1 id="logo"><a href="#">Kochaj to co robisz</a></h1>
 
         </div>
@@ -43,7 +47,6 @@
           <li class="nav-links"><a href="#about-text-photo">O mnie</a></li>
           <li class="nav-links"><a href="#oferta"><span class="oferta">Oferta</span></a></li>
           <li class="nav-links"><a href="#kontakt">Kontakt</a></li>
-
         </ul>
       </nav>
     </header>
@@ -55,8 +58,12 @@
 
     <a class="landing-arrow" href="#about-text-photo"><i class="far fa-arrow-alt-circle-down"></i></a>
   </section>
+  
 
-  <main>
+  <!--landing page ends-->
+
+  <!--About page start-->
+
     <div id="about-text-photo">
       <div class="clip-path"></div>
       <div class="home-text">
@@ -72,23 +79,21 @@
           <li class="intoduction-text-5"><i class="fas fa-arrow-right"></i>Osoby Śniącej Świadomie</li>
           <li class="intoduction-text-6"><i class="fas fa-arrow-right"></i>Trenera Mentalnego.</li>
         </ul>
-      </div>
-      <div class="home-image">
+       </div>
+        <div class="home-image">
         <img class="ownerimage" src="/images/pawel.png" alt="author">
       </div>
 
-      <p>Doświadczony przez życie wiem, jak zbudować pozytywne fundamenty myślenia, które ułatwiają dalszą pracę nad
+        <p>Doświadczony przez życie wiem, jak zbudować pozytywne fundamenty myślenia, które ułatwiają dalszą pracę nad
         zmianą samego siebie. Tak, by w łagodny sposób przejść przez proces uzdrawiania swojej psychiki, mentalności i
         ducha.
         <br><br>
         Ostatecznym efektem ma być pełne uświadomienie tobie. Twojego wewnętrznego potencjału i manifestacji jego w
         pełni radości i szczęścia, jakie w sobie nosisz. Tak, by nieść światło innym. I tworzyć życie, na jakie
         zasługujesz.
+
       </p>
-
     </div>
-
-  </main>
   <section id="about">
     <div class="about-wrapper">
       <h2 class="about-motto-first">Poznaj prawdziwą głębie swojej istoty.</h2>
@@ -129,6 +134,11 @@
       </details>
     </div>
   </section>
+
+   <!--About page ends-->
+
+    <!--Ofert page starts-->
+
   <section id="oferta">
     <h2 class="ofert-text-top">Jak pracuje?</h2>
     <div class="ofert-cards-wrapper">
@@ -164,16 +174,16 @@
     </div>
     </div>
   </section>
+
+  <!--Ofert page starts-->
+
+  <!--Contact page starts-->
+
   <section id="kontakt">
     <h2>Wiem, że możesz mieć wiele pytań.</h2>
     <p class="kontakt-text-top">Napisz do mnie i porozmawiajmy.</p>
-
-
-
-
-
     <div class="form-wrapper">
-      <form action="contact.php" method="post">
+      <form name="contact" method="POST" data-netlify="true">
         <div class="background">
           <div class="bank-details-wrapper">
             <div class="bank-details-close">
@@ -232,16 +242,16 @@
                       <input type="text" class="app-form-control" name="name" placeholder="Imię">
                     </div>
                     <div class="app-form-group">
-                      <input type="email" class="app-form-control" name="email" placeholder="EMAIL">
+                      <input type="email" class="app-form-control" name="email" placeholder="Email">
                     </div>
                     <div class="app-form-group">
-                      <input type="text" class="app-form-control" name="subject" placeholder="NUMER">
+                      <input type="text" class="app-form-control" name="subject" placeholder="Numer kontaktowy">
                     </div>
                     <div class="app-form-group message">
                       <input type="text" class="app-form-control" name="message" placeholder="Wiadomość">
                     </div>
                     <div class="app-form-group buttons">
-                      <button class="app-form-button">Wyślij</button>
+                      <button class="app-form-button" type="submit">Wyślij</button>
                     </div>
                   </div>
                 </div>
@@ -251,13 +261,10 @@
         </div>
     </div>
     </form>
-
-
-
     </div>
-
   </section>
-
+  <!--Contact page starts-->
+  <!--Footer starts-->
   <footer>
     <div class="footer-wrapper">
     </div>
@@ -274,15 +281,18 @@
       </ul>
     </div>
   </footer>
+
+    <!--Footer ends-->
+
+    <!--SCRIPTS STARTS-->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script src="/js/animations.js"></script>
   <script src="/js/app.js"></script>
-
   <script src="contact.php"></script>
 
-
-
+  <!--SCRIPTS ENDS-->
 </body>
 
 </html>

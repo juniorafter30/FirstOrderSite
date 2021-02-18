@@ -34,7 +34,6 @@ navLinks.forEach(link => {
 
 window.addEventListener('scroll', () => {
 header.classList.toggle('on-scroll', window.scrollY > 0);
-sessionButton.classList.toggle('on-scroll', window.scrollY > 0);
 
 });
 
