@@ -141,12 +141,12 @@ nav #logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 30vh;
+  min-height: 50vh;
   background: #00b4db;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0195c7), to(#41cbeb));
-  background: linear-gradient(to right, #0195c7, #41cbeb);
+  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
+  background: linear-gradient(to right, #0083b0, #00b4db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -168,8 +168,8 @@ nav #logo {
   background: #00b4db;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0195c7), to(#41cbeb));
-  background: linear-gradient(to right, #0195c7, #41cbeb);
+  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
+  background: linear-gradient(to right, #0083b0, #00b4db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   text-align: center;
@@ -184,8 +184,8 @@ nav #logo {
 .about-text-photo {
   padding: 4rem;
   min-height: 100vh;
-  margin: auto;
   width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,9 +195,9 @@ nav #logo {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
 }
 
 .about-text-photo p {
@@ -205,7 +205,7 @@ nav #logo {
   margin-right: 10%;
 }
 
-.home-text {
+.about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,24 +227,23 @@ nav #logo {
   color: white;
 }
 
-.home-text h3 {
+.about-text h3 {
   font-size: 2.5rem;
 }
 
-.home-text .fas {
+.about-text .fas {
   font-size: 1.5rem;
   margin-right: 1.5rem;
   color: #dab351;
 }
 
-.home-text li {
+.about-text li {
   font-size: 2rem;
-  margin-left: 4rem;
   -webkit-transform: translate(-200%);
           transform: translate(-200%);
 }
 
-.home-text h3 {
+.about-text h3 {
   padding: 2.8rem;
   padding-bottom: 2rem;
 }
@@ -259,38 +258,29 @@ nav #logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
 }
 
 .about-image img {
   margin-top: 1rem;
-  border: 1px solid black;
-  width: 55%;
-  width: 50%;
-  position: relative;
+  width: 70%;
   border-radius: 3%;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 2rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
   background: transparent;
 }
 
 .about-wrapper {
   width: 80%;
   margin: auto;
-}
-
-.about-motto-first,
-.about-motto-second {
-  opacity: 0;
 }
 
 details {
@@ -339,9 +329,6 @@ details[open] summary {
 @media screen and (max-width: 1100px) {
   .about-text-photo p {
     font-size: 1.6rem;
-  }
-  .about-text-photo img {
-    width: 35%;
   }
   header {
     background: transparent;
@@ -431,31 +418,38 @@ details[open] summary {
   .landing-text h2 {
     background: transparent;
   }
-  .home-image {
+  .about-image {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  .home-text h3 {
-    font-size: 1.5rem;
+  .about-text h3 {
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .about-text-photo h3 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+  }
   .ofert-text-top {
     margin-top: 3rem;
+  }
+  .about-image {
+    margin: 0;
+    width: 100%;
+  }
+  .about-image img {
+    width: 100%;
+    height: 100%;
   }
   .card1 {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  .home-image img {
-    width: 60%;
-  }
   .about-text-photo li {
     font-size: 1.6rem;
-  }
-  .about-text-photo h3 {
-    font-size: 1.8rem;
   }
   #oferta .ofert-text-top {
     font-size: 2.5rem;
@@ -477,29 +471,56 @@ details[open] summary {
     -webkit-transform: translate(-300%);
             transform: translate(-300%);
   }
+  h2 {
+    font-size: 2.5rem;
+  }
+  summary {
+    font-size: 2rem;
+  }
+  .about-text-photo {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1400px) {
   .about-text-photo h3 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
 @media screen and (max-width: 1250px) {
   .about-text-photo h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
   }
   .about-text-photo li {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .about-text-photo h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .about-text-photo li {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1304px) {
+  .about-image {
+    padding: 3rem;
+  }
+  .about-image img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .about-text-photo h3 {
     font-size: 1.5rem;
+  }
+  .about-text-photo li {
+    font-size: 1.6rem;
   }
 }
 
@@ -661,7 +682,7 @@ details[open] summary {
   box-shadow: 10px 10px 71px 0px rgba(0, 0, 0, 0.75);
   padding: 1.5rem 3.5rem;
   margin: 2rem;
-  background-color: transparent;
+  background-color: #dab351;
   border-radius: 40px 40px 40px 40px;
   border: none;
   cursor: pointer;
@@ -676,11 +697,11 @@ details[open] summary {
 .session:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #dab351;
+  background: transparent;
 }
 
 .session:hover a {
-  color: #353434;
+  color: white;
 }
 
 .motto {
@@ -705,7 +726,8 @@ details[open] summary {
 }
 
 .landing-arrow:hover {
-  color: #0096c7;
+  color: white;
+  scale: 1.2;
 }
 
 .social {

@@ -2,17 +2,17 @@
 
 #about-wrapper {
   @include flex(center, column);
-  min-height: 30vh;
+  min-height: 50vh;
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0195c7,
-    #41cbeb
+    #0083b0,
+    #00b4db
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0195c7,
-    #41cbeb
+    #0083b0,
+    #00b4db
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -22,13 +22,13 @@
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0195c7,
-    #41cbeb
+    #0083b0,
+    #00b4db
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0195c7,
-    #41cbeb
+    #0083b0,
+    #00b4db
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: white;
@@ -42,13 +42,13 @@
 .about-text-photo {
   padding: 4rem;
   min-height: 100vh;
-  margin: auto;
   width: 80%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-wrap: wrap;
   position: relative;
+  flex-wrap: wrap;
 
   p {
     margin-left: 10%;
@@ -56,7 +56,7 @@
   }
 }
 
-.home-text {
+.about-text {
   @include flex(center, column);
   margin: auto;
   text-align: justify;
@@ -69,12 +69,11 @@
   .fas {
     font-size: 1.5rem;
     margin-right: 1.5rem;
-    color: #dab351;
+    color: rgb(218, 179, 81);
   }
 
   li {
     font-size: 2rem;
-    margin-left: 4rem;
     transform: translate(-200%);
   }
 
@@ -85,21 +84,17 @@
 }
 
 .about-image {
-  @include flex(center, row);
+  @include flex(center, column);
   width: 100%;
   height: 100%;
-  flex: 1 1 50rem;
+  flex: 1 1 40rem;
   img {
     margin-top: 1rem;
-    border: 1px solid black;
-    width: 55%;
-    width: 50%;
-    position: relative;
+    width: 70%;
     border-radius: 3%;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    padding: 2rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
     background: transparent;
   }
 }
@@ -107,11 +102,6 @@
 .about-wrapper {
   width: 80%;
   margin: auto;
-}
-
-.about-motto-first,
-.about-motto-second {
-  opacity: 0;
 }
 
 details {

@@ -23,7 +23,7 @@
     box-shadow: 10px 10px 71px 0px rgba(0, 0, 0, 0.75);
     padding: 1.5rem 3.5rem;
     margin: 2rem;
-    background-color: transparent;
+    background-color: $background-color-yellow;
     border-radius: 40px 40px 40px 40px;
     border: none;
     cursor: pointer;
@@ -37,10 +37,10 @@
 
 .session:hover {
   transition: all 0.5s ease;
-  background: $background-color-yellow;
+  background: transparent;
 
   a {
-    color: rgb(53, 52, 52);
+    color: white;
   }
 }
 
@@ -62,7 +62,8 @@
   transition: 1s ease;
 }
 .landing-arrow:hover {
-  color: $background-color-main;
+  color: white;
+  scale: 1.2;
 }
 
 .social {
