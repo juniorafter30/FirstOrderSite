@@ -1,7 +1,7 @@
 /* RESPONSIVE MATTERS */
 
 @media screen and (max-width: 1100px) {
-  #about-text-photo {
+  .about-text-photo {
     p {
       font-size: 1.6rem;
     }
@@ -20,6 +20,7 @@
   header {
     border: none;
     position: relative;
+    box-shadow: none;
     a {
       color: white;
     }
@@ -78,13 +79,8 @@
   }
 
   .landing-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0;
-
     h2 {
-      background: $background-color-main;
+      background: transparent;
     }
   }
 
@@ -101,22 +97,7 @@
   }
 }
 
-.landing-text {
-  h2 {
-    color: white;
-    border: 1px solid black;
-    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-  }
-  .session {
-    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-  }
-}
-
 @media screen and (max-width: 700px) {
-  .landing-text {
-    top: 5rem;
-    left: 5rem;
-  }
   .ofert-text-top {
     margin-top: 3rem;
   }
@@ -131,7 +112,7 @@
       width: 60%;
     }
   }
-  #about-text-photo {
+  .about-text-photo {
     li {
       font-size: 1.6rem;
     }
@@ -145,6 +126,12 @@
     .ofert-text-top {
       font-size: 2.5rem;
       margin: auto;
+    }
+  }
+
+  #landing {
+    .motto {
+      padding: 0rem;
     }
   }
 
@@ -165,7 +152,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-  #about-text-photo {
+  .about-text-photo {
     h3 {
       font-size: 2.2rem;
     }
@@ -173,7 +160,7 @@
 }
 
 @media screen and (max-width: 1250px) {
-  #about-text-photo {
+  .about-text-photo {
     h3 {
       font-size: 1.9rem;
     }
@@ -185,7 +172,7 @@
 }
 
 @media screen and (max-width: 1140px) {
-  #about-text-photo {
+  .about-text-photo {
     h3 {
       font-size: 1.7rem;
     }

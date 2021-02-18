@@ -8,6 +8,9 @@ header {
   top: 0px;
   z-index: 100;
   @include flex(center, row);
+  -webkit-box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
 }
 nav {
   width: 80%;
@@ -23,9 +26,14 @@ nav {
   }
 
   li {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     padding: 1rem;
   }
+
+  li a:hover {
+    color: rgb(218, 216, 216);
+  }
+
   #logo {
     padding: 1rem;
   }

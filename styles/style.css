@@ -24,8 +24,10 @@ li {
 }
 
 h1 {
-  font-size: 3rem;
-  font-family: "pattaya", sans-serif;
+  font-size: 2rem;
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -66,6 +68,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
 }
 
 nav {
@@ -95,8 +99,12 @@ nav ul {
 }
 
 nav li {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   padding: 1rem;
+}
+
+nav li a:hover {
+  color: #dad8d8;
 }
 
 nav #logo {
@@ -119,6 +127,29 @@ nav #logo {
 }
 
 /* About section stylings */
+#about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 30vh;
+  background: #00b4db;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0195c7), to(#41cbeb));
+  background: linear-gradient(to right, #0195c7, #41cbeb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,17 +181,11 @@ nav #logo {
   color: white;
 }
 
-#about-text-photo {
-  background: #00b4db;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0195c7), to(#41cbeb));
-  background: linear-gradient(to right, #0195c7, #41cbeb);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.about-text-photo {
   padding: 4rem;
   min-height: 100vh;
   margin: auto;
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,11 +198,9 @@ nav #logo {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  border-top: 2px solid black;
-  position: relative;
 }
 
-#about-text-photo p {
+.about-text-photo p {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -198,17 +221,14 @@ nav #logo {
           flex-direction: column;
   margin: auto;
   text-align: justify;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 55rem;
+          flex: 2 1 55rem;
   color: white;
 }
 
 .home-text h3 {
   font-size: 2.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .home-text .fas {
@@ -229,7 +249,7 @@ nav #logo {
   padding-bottom: 2rem;
 }
 
-.home-image {
+.about-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,22 +263,24 @@ nav #logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
+  height: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60rem;
-          flex: 1 1 60rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
 }
 
-.home-image img {
+.about-image img {
   margin-top: 1rem;
   border: 1px solid black;
-  width: 40%;
-  height: 40%;
+  width: 55%;
+  width: 50%;
   position: relative;
   border-radius: 3%;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 1rem;
-  background: #dab351;
+  padding: 2rem;
+  background: transparent;
 }
 
 .about-wrapper {
@@ -315,10 +337,10 @@ details[open] summary {
 
 /* RESPONSIVE MATTERS */
 @media screen and (max-width: 1100px) {
-  #about-text-photo p {
+  .about-text-photo p {
     font-size: 1.6rem;
   }
-  #about-text-photo img {
+  .about-text-photo img {
     width: 35%;
   }
   header {
@@ -331,6 +353,8 @@ details[open] summary {
   header {
     border: none;
     position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   header a {
     color: white;
@@ -404,14 +428,8 @@ details[open] summary {
             transform: rotateZ(405deg) translate(-8px, -6px);
     background: white;
   }
-  .landing-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0;
-  }
   .landing-text h2 {
-    background: #0096c7;
+    background: transparent;
   }
   .home-image {
     margin-top: 3rem;
@@ -422,23 +440,7 @@ details[open] summary {
   }
 }
 
-.landing-text h2 {
-  color: white;
-  border: 1px solid black;
-  -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-          box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-}
-
-.landing-text .session {
-  -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-          box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-}
-
 @media screen and (max-width: 700px) {
-  .landing-text {
-    top: 5rem;
-    left: 5rem;
-  }
   .ofert-text-top {
     margin-top: 3rem;
   }
@@ -449,15 +451,18 @@ details[open] summary {
   .home-image img {
     width: 60%;
   }
-  #about-text-photo li {
+  .about-text-photo li {
     font-size: 1.6rem;
   }
-  #about-text-photo h3 {
+  .about-text-photo h3 {
     font-size: 1.8rem;
   }
   #oferta .ofert-text-top {
     font-size: 2.5rem;
     margin: auto;
+  }
+  #landing .motto {
+    padding: 0rem;
   }
   #kontakt h2 {
     font-size: 2rem;
@@ -475,25 +480,25 @@ details[open] summary {
 }
 
 @media screen and (max-width: 1400px) {
-  #about-text-photo h3 {
+  .about-text-photo h3 {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  #about-text-photo h3 {
+  .about-text-photo h3 {
     font-size: 1.9rem;
   }
-  #about-text-photo li {
+  .about-text-photo li {
     font-size: 1.7rem;
   }
 }
 
 @media screen and (max-width: 1140px) {
-  #about-text-photo h3 {
+  .about-text-photo h3 {
     font-size: 1.7rem;
   }
-  #about-text-photo li {
+  .about-text-photo li {
     font-size: 1.5rem;
   }
 }
@@ -621,7 +626,8 @@ details[open] summary {
 #landing {
   max-width: 100vw;
   min-height: 100vh;
-  background-image: url("/images/landingpage.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 22, 22, 0.1))), url("/images/landingpage.jpg");
+  background-image: linear-gradient(rgba(27, 22, 22, 0.1)), url("/images/landingpage.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -630,8 +636,8 @@ details[open] summary {
 
 .landing-text {
   position: absolute;
-  top: 25rem;
-  right: 10%;
+  top: 50%;
+  right: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,20 +652,25 @@ details[open] summary {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 
 .landing-text button {
   -webkit-box-shadow: 10px 10px 71px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 71px 0px rgba(0, 0, 0, 0.75);
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 3.5rem;
   margin: 2rem;
-  background-color: #0096c7;
-  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 40px 40px 40px 40px;
+  border: none;
   cursor: pointer;
 }
 
 .landing-text button a {
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
 }
 
 .session:hover {
@@ -675,23 +686,26 @@ details[open] summary {
 .motto {
   padding: 2rem;
   font-size: 3rem;
-  border: none;
+  border: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 40px 40px 40px 40px;
 }
 
 .landing-arrow {
   position: absolute;
   bottom: 4rem;
   left: 50%;
-  font-size: 6rem;
-  color: #0096c7;
+  font-size: 4rem;
+  color: #dab351;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .landing-arrow:hover {
-  color: #dab351;
+  color: #0096c7;
 }
 
 .social {
@@ -714,7 +728,7 @@ details[open] summary {
 
 .social a {
   color: #fff;
-  background: rgba(0, 150, 199, 0.7);
+  background: transparent;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
@@ -724,12 +738,14 @@ details[open] summary {
   width: 300px;
   text-align: right;
   border-radius: 50px;
-  -webkit-transition: 1s;
-  transition: 1s;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-box-shadow: 10px 10px 71px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 71px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .social a:hover {
@@ -742,6 +758,10 @@ details[open] summary {
   font-size: 25px;
   width: 30px;
   height: 30px;
+}
+
+.social a:hover {
+  background: #0096c7;
 }
 
 .social a:nth-child(1) i {
