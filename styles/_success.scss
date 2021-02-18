@@ -1,0 +1,33 @@
+.success {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+a {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-transform: none;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  padding: 1rem 3rem;
+  background: transparent;
+  border: 1px solid black;
+}
