@@ -49,3 +49,4 @@ detailsButton.addEventListener('click', () =>
 detailsClose.addEventListener('click', () => 
     bankInformations.style.display = "none"
 );
+
