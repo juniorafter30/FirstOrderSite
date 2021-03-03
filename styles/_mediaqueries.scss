@@ -167,10 +167,6 @@
     font-size: 2rem;
   }
 
-  .about-text-photo {
-    width: 90%;
-  }
-
   footer {
     min-height: 40vh;
     p {
@@ -214,15 +210,6 @@
 
     li {
       font-size: 1.6rem;
-    }
-  }
-}
-
-@media screen and (max-width: 1304px) {
-  .about-image {
-    padding: 3rem;
-    img {
-      width: 60%;
     }
   }
 }

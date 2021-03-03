@@ -3,6 +3,7 @@
 #about-wrapper {
   @include flex(center, column);
   min-height: 50vh;
+
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -42,26 +43,21 @@
 }
 .about-text-photo {
   padding: 4rem;
-  min-height: 100vh;
-  width: 80%;
+
+  max-width: 1000px;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
   flex-wrap: wrap;
-
-  p {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
 }
 
 .about-text {
   @include flex(center, column);
   margin: auto;
   text-align: justify;
-  flex: 2 1 55rem;
+  flex: 1 1 20rem;
   color: white;
   h3 {
     font-size: 2.5rem;
@@ -88,10 +84,10 @@
   @include flex(center, column);
   width: 100%;
   height: 100%;
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   img {
-    margin-top: 1rem;
-    width: 70%;
+    margin: 3rem;
+    width: 60%;
     border-radius: 3%;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
@@ -101,7 +97,7 @@
 }
 
 .about-wrapper {
-  width: 80%;
+  max-width: 1000px;
   margin: auto;
 }
 
