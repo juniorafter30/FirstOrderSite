@@ -141,7 +141,7 @@ nav #logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 50vh;
+  min-height: 60vh;
   background: #00b4db;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
@@ -177,6 +177,7 @@ nav #logo {
 }
 
 #about p {
+  margin: 2rem;
   font-size: 1.7rem;
   padding: 4rem;
   color: white;
@@ -184,6 +185,7 @@ nav #logo {
 
 .about-text-photo {
   padding: 4rem;
+  margin: 4rem;
   max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,8 +218,8 @@ nav #logo {
   margin: auto;
   text-align: justify;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
   color: white;
 }
 
@@ -237,11 +239,6 @@ nav #logo {
           transform: translate(-200%);
 }
 
-.about-text h3 {
-  padding: 2.8rem;
-  padding-bottom: 2rem;
-}
-
 .about-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,13 +256,15 @@ nav #logo {
   width: 100%;
   height: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
 }
 
 .about-image img {
   margin: 3rem;
   width: 60%;
+  max-height: 360px;
+  max-width: 300px;
   border-radius: 3%;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(218, 179, 81, 0.75);
@@ -436,14 +435,6 @@ details[open] summary {
   }
   .ofert-text-top {
     margin-top: 3rem;
-  }
-  .about-image {
-    margin: 0;
-    width: 100%;
-  }
-  .about-image img {
-    width: 100%;
-    height: 100%;
   }
   .card1 {
     margin-top: 2rem;
