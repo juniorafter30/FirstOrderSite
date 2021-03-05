@@ -7,12 +7,12 @@
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0083b0,
+    #a3e7fd,
     #00b4db
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0083b0,
+    #a3e7fd,
     #00b4db
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-top: 1px solid black;
@@ -24,16 +24,16 @@
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0083b0,
+    #a3e7fd,
     #00b4db
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0083b0,
+    #a3e7fd,
     #00b4db
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  color: white;
+  color: rgb(255, 255, 255);
   p {
     margin: 2rem;
     font-size: 1.7rem;
@@ -59,7 +59,7 @@
   margin: auto;
   text-align: justify;
   flex: 1 1 30rem;
-  color: white;
+  color: rgb(255, 255, 255);
   h3 {
     font-size: 2.5rem;
   }
