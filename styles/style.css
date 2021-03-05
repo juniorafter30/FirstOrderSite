@@ -71,8 +71,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-shadow: 1px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 nav {
@@ -116,6 +114,8 @@ nav #logo {
 
 .on-scroll {
   min-height: 8vh;
+  -webkit-box-shadow: 1px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.75);
   background-color: #0096c7;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;

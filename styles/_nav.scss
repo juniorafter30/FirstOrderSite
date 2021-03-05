@@ -8,9 +8,6 @@ header {
   top: 0px;
   z-index: 100;
   @include flex(center, row);
-  -webkit-box-shadow: 1px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 nav {
   width: 80%;
@@ -41,6 +38,9 @@ nav {
 
 .on-scroll {
   min-height: 8vh;
+  -webkit-box-shadow: 1px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.75);
   .oferta {
     color: $background-color-yellow;
   }
