@@ -13,6 +13,9 @@ html {
   color: white;
 }
 
+/* fallback for old browsers */
+/* Chrome 10-25, Safari 5.1-6 */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* FONT SIZES  and decorations*/
 a {
   text-decoration: none;
@@ -68,8 +71,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 10px 71px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 nav {
@@ -143,11 +146,8 @@ nav #logo {
           flex-direction: column;
   min-height: 60vh;
   background: #00b4db;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#a3e7fd), to(#00b4db));
   background: linear-gradient(to right, #a3e7fd, #00b4db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-top: 1px solid black;
 }
 
@@ -167,11 +167,8 @@ nav #logo {
           flex-direction: column;
   min-height: 30vh;
   background: #00b4db;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#a3e7fd), to(#00b4db));
   background: linear-gradient(to right, #a3e7fd, #00b4db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   text-align: center;
 }
@@ -517,11 +514,8 @@ details[open] summary {
 
 #oferta {
   background: #00b4db;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
-  background: linear-gradient(to right, #0083b0, #00b4db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-gradient(linear, left top, right top, from(#a3e7fd), to(#00b4db));
+  background: linear-gradient(to right, #a3e7fd, #00b4db);
   max-width: 100vw;
   min-height: 100vh;
   display: -webkit-box;
@@ -572,8 +566,8 @@ details[open] summary {
   display: grid;
   -ms-grid-columns: 30rem;
       grid-template-columns: 30rem;
-  -ms-grid-rows: 21rem 21rem 10rem;
-      grid-template-rows: 21rem 21rem 10rem;
+  -ms-grid-rows: 21rem 21rem 13rem;
+      grid-template-rows: 21rem 21rem 13rem;
       grid-template-areas: "image" "text" "bottom";
   border-radius: 1.8rem;
   background: #0096c7;
@@ -581,6 +575,25 @@ details[open] summary {
   -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
           box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
   text-align: center;
+}
+
+.card button {
+  font-size: 1.2rem;
+  margin: 1rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #dab351;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.card button:hover {
+  color: #dab351;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #dab351;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 .card-image {
@@ -602,7 +615,7 @@ details[open] summary {
 }
 
 .card-text p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -631,15 +644,14 @@ details[open] summary {
 
 .card:hover {
   scale: 1.1;
-  -webkit-transition: 0.1  s all ease-in-out;
-  transition: 0.1  s all ease-in-out;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
 
 #landing {
   max-width: 100vw;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 22, 22, 0.1))), url("/images/landingpage.jpg");
-  background-image: linear-gradient(rgba(27, 22, 22, 0.1)), url("/images/landingpage.jpg");
+  background-image: url("/images/landingpage.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -812,11 +824,8 @@ details[open] summary {
   font-weight: 700;
   letter-spacing: 1.4px;
   background: #00b4db;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
-  background: linear-gradient(to right, #0083b0, #00b4db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-gradient(linear, left top, right top, from(#a3e7fd), to(#00b4db));
+  background: linear-gradient(to right, #a3e7fd, #00b4db);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -1241,11 +1250,8 @@ footer p {
           flex-direction: column;
   font-family: "Poppins", sans-serif;
   background: #00b4db;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
-  background: linear-gradient(to right, #0083b0, #00b4db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-gradient(linear, left top, right top, from(#a3e7fd), to(#00b4db));
+  background: linear-gradient(to right, #a3e7fd, #00b4db);
 }
 
 a {

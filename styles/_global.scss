@@ -23,10 +23,23 @@ html {
 }
 
 //VARIABLES
-
-$background-color-main: rgb(0, 150, 199);
-
-$background-color-yellow: rgb(218, 179, 81);
+$background-color-main: rgb(0, 150, 199); // nav and footer color
+$background-color-yellow: rgb(
+  218,
+  179,
+  81
+); // yellow color for headlines and important things
+$background-gradient-old: #00b4db; /* fallback for old browsers */
+$background-browsers1: -webkit-linear-gradient(
+  to right,
+  #a3e7fd,
+  #00b4db
+); /* Chrome 10-25, Safari 5.1-6 */
+$background-browsers2: linear-gradient(
+  to right,
+  #a3e7fd,
+  #00b4db
+); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 /* FONT SIZES  and decorations*/
 

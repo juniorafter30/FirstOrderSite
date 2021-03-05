@@ -4,34 +4,18 @@
   @include flex(center, column);
   min-height: 60vh;
 
-  background: #00b4db; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a3e7fd,
-    #00b4db
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a3e7fd,
-    #00b4db
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $background-gradient-old;
+  background: $background-browsers1;
+  background: $background-browsers2;
   border-top: 1px solid black;
 }
 
 #about {
   @include flex(center, column);
   min-height: 30vh;
-  background: #00b4db; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a3e7fd,
-    #00b4db
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a3e7fd,
-    #00b4db
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $background-gradient-old;
+  background: $background-browsers1;
+  background: $background-browsers2;
 
   color: rgb(255, 255, 255);
   p {
